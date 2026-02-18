@@ -52,6 +52,7 @@ dependencies {
 	implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 	implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.14")  
 	implementation("com.google.code.gson:gson:2.11.0")
+	implementation("org.springframework.boot:spring-boot-starter-security")
 }
 
 tasks.withType<Test> {
