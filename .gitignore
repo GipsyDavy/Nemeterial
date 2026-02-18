@@ -1,0 +1,116 @@
+# =====================================
+# Android / Android Studio
+# =====================================
+.gradle
+/local.properties
+/.idea/
+*.iml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+**/build/
+release/
+*.apk
+*.aab
+app/build/
+app/release/
+
+# =====================================
+# Gradle (Android + Spring Boot)
+# =====================================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-cache/
+caches/
+transforms/
+daemon/
+**/gradle-cache/
+**/caches/
+**/transforms/
+**/daemon/
+
+# =====================================
+# IntelliJ / JetBrains (Android + Spring Boot)
+# =====================================
+.idea/
+*.iws
+*.ipr
+out/
+*.class
+
+# =====================================
+# Spring Boot / Java / Kotlin
+# =====================================
+target/
+*.log
+*.logs
+application-local.*
+application-dev.*
+application-test.*
+application-secrets.*
+application-*.yml   # ← si tienes perfiles con contraseñas
+application-*.yaml
+
+# =====================================
+# Bases de datos (MySQL Workbench + SQLite)
+# =====================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql.gz
+*.sql.zip
+*.mwb-backup
+connection-data.json
+*.bak
+*.swp
+
+# =====================================
+# Secretos y credenciales
+# =====================================
+.env
+.env.*
+!.env.example
+keystore.jks
+*.jks
+*.keystore
+*.p12
+*.pfx
+
+# =====================================
+# Windows / sistema operativo
+# =====================================
+Thumbs.db
+ehthumbs.db
+desktop.ini
+~$*
+*.tmp
+*.bak
+.DS_Store
+
+# =====================================
+# Documentación y archivos temporales
+# =====================================
+*.tmp
+*.bak
+*.~*
+*.swp
+~*
+
+# =====================================
+# Opcional: si NO quieres subir ciertos archivos de docs
+# (descomenta si aplica)
+# =====================================
+# docs/*.docx
+# docs/*.pdf
+# docs/*.ico
+
+# =====================================
+# Carpetas que probablemente NO quieres versionar
+# (ajusta según necesites)
+# =====================================
+# spring-boot/gradle-cache/
+# spring-boot/backend-api/build/
+# database/sqlite/
