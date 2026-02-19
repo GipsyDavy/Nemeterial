@@ -1,19 +1,14 @@
-package com.gipsybuho.app_android;
+package com.gipsybuho.prueba;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Switch;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
-    Switch sw1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,19 +20,5 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        sw1 = findViewById(R.id.sw1);
-
-
-    }
-
-    public void cambiarFondo(View view) {
-        boolean activo = sw1.isChecked();
-
-        if (!activo) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        } else {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-        }
     }
 }
