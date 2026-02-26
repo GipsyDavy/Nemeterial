@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">app-android</string>
+    <string name="app_name">NEMETERIAL</string>
+    <string name="theme">Dark</string>
 </resources>

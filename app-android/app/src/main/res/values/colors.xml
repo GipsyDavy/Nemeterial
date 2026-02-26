@@ -2,6 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="pantallaInicio">#79A56C</color>
-    <string name="theme">Dark</string>
+    <color name="app_name">#79A56C</color>
+
 </resources>
