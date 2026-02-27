@@ -20,11 +20,11 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/inicio"
         android:layout_width="match_parent"
         android:layout_height="387dp"
         android:layout_marginTop="75dp"
-        app:srcCompat="@drawable/logo_chico" />
+        app:srcCompat="@drawable/inicio" />
 
     <LinearLayout
         android:layout_width="match_parent"

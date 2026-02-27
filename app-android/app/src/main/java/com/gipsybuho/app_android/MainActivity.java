@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Switch sw1;
-    ImageView logo;
+    ImageView inicio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,24 +31,25 @@ public class MainActivity extends AppCompatActivity {
         });
 
         sw1 = findViewById(R.id.sw1);
-        logo = findViewById(R.id.logo);
+        inicio = findViewById(R.id.inicio);
 
 // 1. La imagen empieza escondida
-        logo.setAlpha(0f);              // invisible
-        logo.setTranslationY(200f);     // desplazada 200 píxeles hacia abajo
-        logo.setScaleX(0.8f);           // más pequeño al inicio
-        logo.setScaleY(0.8f);           // más pequeño al inicio
+        inicio.setAlpha(0f);              // invisible
+        inicio.setTranslationY(500f);     // desplazada 200 píxeles hacia abajo
+        inicio.setScaleX(0.1f);           // más pequeño al inicio
+        inicio.setScaleY(0.1f);           // más pequeño al inicio
 
 // Opcional pero recomendado: fuerza un layout pass inicial
-        logo.requestLayout();           // ayuda en algunos casos donde no se aplican cambios iniciales
+        inicio.requestLayout();           // ayuda en algunos casos donde no se aplican cambios iniciales
 
 // 2. Inicia la animación
-        logo.animate()
+        inicio.animate()
                 .alpha(1f)                  // → visible
+                .rotationY(360f)            // al final de rotation se pone Y, X o nada dependiendo del tipo de rotacion que queremos
                 .translationY(0f)           // → vuelve a posición normal
                 .scaleX(1f)                 // → tamaño normal
                 .scaleY(1f)
-                .setDuration(1800)          // 1.8 segundos (buen tiempo para fade suave)
+                .setDuration(2500)          // 1.8 segundos (buen tiempo para fade suave)
                 .setStartDelay(350)         // retraso inicial (efecto más natural)
                 .setInterpolator(new AccelerateDecelerateInterpolator())
                 .withEndAction(new Runnable() {  // ← opcional: para depurar
